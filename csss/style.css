@@ -1,8 +1,22 @@
 nav{
-  background-color:black;
-  padding-left: 20px;
+    width: 100%;
+    height:auto;
+    background-color: #3d4240;
+    position: fixed;
 }
-li{
-  display:inline;
+nav ul{
+    float: left;
 }
-
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav li a:hover{
+    color:aquamarine;
+}
