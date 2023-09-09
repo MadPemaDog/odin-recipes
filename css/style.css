@@ -99,3 +99,8 @@ footer li a:hover{
     padding-right: 20px;
     z-index: 0;
 }
+.procedure{
+    width:80%;
+    padding-top: 20%;
+    font-size: medium;
+}
