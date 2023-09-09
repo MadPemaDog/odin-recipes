@@ -1,29 +1,58 @@
-/* nav bar css */
-nav{
+/* Navigation bar CSS */
+nav {
     width: 99%;
-    height:auto;
-    margin: 10 10 10 10;
     background-color: #3d4240;
     position: fixed;
     z-index: 1;
 }
-nav ul{
-    float:left;
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
-nav li{
-    list-style: none;
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
+nav li {
+    position: relative;
 }
-nav li a{
+
+nav a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 10px;
 }
-nav li a:hover{
-    color:rgb(76, 135, 115);
+
+nav a:hover {
+    color: rgb(76, 135, 115);
+}
+
+/* Dropdown menu CSS */
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    background-color: #3d4240;
+    width: auto;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+    padding: 10px;
+    text-align: left;
+}
+
+nav ul ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul ul li a:hover {
+    color: rgb(76, 135, 115);
 }
 
 /* footer css */
@@ -50,7 +79,7 @@ footer li a:hover{
     color: aquamarine;
 }
 
-/* Div*/
+/* Split Layout CSS*/
 .split {
     padding-top: 5%;
     height: 100%;
@@ -62,21 +91,11 @@ footer li a:hover{
 .left {
     left: 0;
     padding-left: 20px;
-    z-index: 0; 
+    z-index: 0;
 }
 
 .right {
     right: 0;
     padding-right: 20px;
-    z-index: 0; 
+    z-index: 0;
 }
-
-nav .dropdown{
-    display: block;
-}
-nav ul li ul.dropdown{
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-
